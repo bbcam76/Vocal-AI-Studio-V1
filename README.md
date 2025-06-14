@@ -67,3 +67,22 @@ cd vocal-mood-studio
 
 # Start with Docker
 docker-compose up --build
+
+# Development
+
+```bash
+cd frontend
+npm install
+npm run dev
+
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+flask run
+
+# Producti
+```bash
+docker-compose -f docker-compose.prod.yml up -d --build
